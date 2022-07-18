@@ -10,6 +10,7 @@ const Userchema =new mongoose.Schema({
     password:{
         type:String
     },
+  
 },{
     timestamps:true
 })

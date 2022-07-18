@@ -1,7 +1,7 @@
 const allowAccess =(req,res,next) =>{
     const token =req.headers.token
     if(token){
-
+           next();
     }
     else{
         res.json({
@@ -10,3 +10,4 @@ const allowAccess =(req,res,next) =>{
         })
     }
 }
+module.exports = allowAccess

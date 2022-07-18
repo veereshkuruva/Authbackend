@@ -3,6 +3,7 @@ const { passwordCompare, jwtGen } = require("../utlis/utlis");
 const bcrypt = require('bcrypt')
 
 const signUp =async (req, res) => {
+    
     var encryptPasa =await bcrypt.hash(req.body.password, 10) 
 
 
@@ -21,7 +22,7 @@ const signUp =async (req, res) => {
     }).catch(err => {
 
         res.json({
-            message: err.message
+            message:"not registerd"
         })
 
     })

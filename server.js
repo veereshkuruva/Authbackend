@@ -15,10 +15,8 @@ dbConnect(process.env.MONGO).then(data => {
         console.log(`Db connected, server is running http://localhost:${port}`)
     })
     
-  
 
 }).catch(error => {
     console.log("Error is connected,")
 })
-
 
